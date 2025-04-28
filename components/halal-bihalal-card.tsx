@@ -1,7 +1,5 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-
 import { motion } from "framer-motion"
 import { Calendar, Clock, MapPin, Users } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
@@ -95,13 +93,6 @@ export function HalalBihalalCard({ recipientName, onDownload }: HalalBihalalCard
                 Kehadiran Bapak/Ibu/Saudara/i merupakan suatu kehormatan dan kebahagiaan bagi kami.
               </p>
             </div>
-
-            {/* Download button */}
-            {onDownload && (
-              <Button onClick={onDownload} className="w-full bg-emerald-600 hover:bg-emerald-700">
-                Simpan Undangan
-              </Button>
-            )}
           </div>
 
           {/* Footer */}
